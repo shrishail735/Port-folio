@@ -37,7 +37,7 @@
   position: static;
   color:white;
     width: 100%;
-    height: 80px;
+    /* height: 80px; */
     padding-top: 20px;
     background-color:black;
     text-align: center;
@@ -223,7 +223,12 @@ body{
   opacity: 0.8;
     animation: fade 0.5s ease-out 0.4s backwards;
 }
-.g:hover, .l:hover, .h:hover{
+.d{
+  color:black;
+  opacity: 0.8;
+    animation: fade 0.5s ease-out 0.4s backwards;
+}
+.g:hover, .l:hover, .h:hover , .d:hover{
   opacity: 1;
   transform: scale(1.2);
 }
@@ -235,7 +240,7 @@ body{
         transform: scale(0.5);
     }
     80%{
-        transform: scale(1.2);
+      transform: scale(1.1);
     }
     100%{
      transform: scale(1);
@@ -256,9 +261,13 @@ background-color: black;
     line-height: 2em;
     background-color:#0e0d0d;
     border-radius: 10%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .projects .card:hover{
-  animation: fade 0.5s ease-in-out ;
+  transform: scale(1.02);
+  /* animation: fade 0.5s ease-in ; */
 }
 .projects a{
   display:flex;
@@ -272,14 +281,14 @@ justify-content: end;
   margin-bottom: 20px;
 }
 
-@keyframes fade{
+/* @keyframes fade{
   0%{
      transform: rotateY(20deg); 
   }
   100%{
    transform: rotateY(-20deg);
   }
-}
+} */
 
 .footer{
   width: 90%;
@@ -289,4 +298,33 @@ justify-content: end;
   height: 100px;
   align-items: center;
   justify-content: center;
+}
+
+.experiences{
+  /* background-color: aquamarine; */
+  /* height: 300px; */
+  display: flex;
+  width: 80%;
+  margin: 10px auto;
+  flex-direction: column;
+}
+
+.experiences .experience 
+{
+  width: 90%;
+  display: flex;
+  margin: 20px 0;
+ 
+}
+.experiences .experience .logo img
+{
+  width: 30%;
+  background-color: azure;
+  border-radius: 50%;
+}
+.experiences .experience .logo img
+{
+  width: 50%;
+ 
+  
 }
