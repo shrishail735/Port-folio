@@ -291,16 +291,17 @@ justify-content: end;
 } */
 
 .footer{
-  width: 90%;
-  margin: 50px;
-  color: #0e0d0d;
-  position: absolute;
-  height: 100px;
-  align-items: center;
-  justify-content: center;
+  /* width: 10%; */
+  /* margin: 50px 0; */
+  color: white;
+  background-color: #0e0d0d;
+  /* position: absolute; */
+  /* height: 100px; */
+  padding: 10px;
+  text-align: center;
 }
 
-.experiences{
+.experiences, .Certifications{
   /* background-color: aquamarine; */
   /* height: 300px; */
   display: flex;
@@ -309,22 +310,31 @@ justify-content: end;
   flex-direction: column;
 }
 
-.experiences .experience 
+.experiences .experience , .Certifications .Certification 
 {
   width: 90%;
   display: flex;
   margin: 20px 0;
- 
+  border: #4b4a4a 1px solid;
+  padding: 10px;
 }
-.experiences .experience .logo img
+.experiences .experience .logo , .Certifications .Certification .logo
 {
   width: 30%;
+}
+.experiences .experience .logo img,.Certifications .Certification .logo img
+{
+  width: 90%;
   background-color: azure;
   border-radius: 50%;
+  border: #0e0d0d 2px solid;
 }
-.experiences .experience .logo img
+.experiences .experience .infor, .Certifications .Certification .infor
 {
-  width: 50%;
- 
-  
+  width: 70%;
 }
+
+/* .Certifications
+{
+  background-color: #7e7a7a;
+} */
