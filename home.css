@@ -253,6 +253,7 @@ body{
 .projects{
 background-color: black;
 width: 100%;
+cursor: pointer;
 }
 .projects .card{
   color:azure;
@@ -308,10 +309,12 @@ justify-content: end;
   /* background-color: aquamarine; */
   /* height: 300px; */
   display: flex;
-  width: 80%;
+  width: 100%;
   margin: 10px auto;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .experiences .experience , .Certifications .Certification 
@@ -319,19 +322,23 @@ justify-content: end;
   width: 90%;
   display: flex;
   margin: 20px 0;
+
   border: #4b4a4a 1px solid;
   padding: 10px;
 }
 .experiences .experience .logo , .Certifications .Certification .logo
 {
-  width: 30%;
+  width: 50%;
+  
 }
 .experiences .experience .logo img,.Certifications .Certification .logo img
 {
   width: 90%;
   background-color: azure;
-  border-radius: 50%;
+  border-radius: 20%;
   border: #0e0d0d 2px solid;
+  padding: 10px;
+  height: 200px;
 }
 .experiences .experience .infor, .Certifications .Certification .infor
 {
